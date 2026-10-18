@@ -1,0 +1,21 @@
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+venv/
+.venv/
+travelenv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.log
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
