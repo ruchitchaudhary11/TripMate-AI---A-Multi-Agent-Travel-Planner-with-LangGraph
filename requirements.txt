@@ -14,5 +14,8 @@ pycountry==26.2.16
 fastapi==0.136.3
 uvicorn==0.48.0
 jinja2==3.1.6
+langchain-mcp-adapters==0.3.0
+nest_asyncio==1.6.0
+mcp==1.28.1
 
-postgresql://ruchit11:aD7N7nd1OcD7kvXY1jMM8Us1XJeZ6n2S@dpg-daufuvojo6nc73893qgg-a.oregon-postgres.render.com/agentmemory_8x71
+
