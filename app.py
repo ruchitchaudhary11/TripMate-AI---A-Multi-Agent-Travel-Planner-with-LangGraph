@@ -12,8 +12,6 @@ from backend import run_travel_agent
 
 BASE_DIR = Path(__file__).resolve().parent
 # This is to allow nested event loops for async calls in FastAPI
-import nest_asyncio
-nest_asyncio.apply()
 app = FastAPI(
     title="TripMate AI",
     description="LangGraph Multi-Agent Travel Planner with FastAPI Frontend",
@@ -50,7 +48,7 @@ async def home(request: Request):
 
 
 @app.post("/api/travel")
-async def travel_planner(request_data: TravelRequest):
+def travel_planner(request_data: TravelRequest):
     try:
         user_message = request_data.message.strip()
 
