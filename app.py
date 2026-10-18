@@ -12,9 +12,6 @@ from backend import run_travel_agent, resume_travel_agent
 
 # This is kept from the original project to allow the existing synchronous
 # agent functions to call async MCP helpers inside FastAPI.
-import nest_asyncio
-
-nest_asyncio.apply()
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -57,7 +54,7 @@ async def home(request: Request):
 
 
 @app.post("/api/travel")
-async def travel_planner(request_data: TravelRequest):
+def travel_planner(request_data: TravelRequest):
     try:
         user_message = request_data.message.strip()
 
